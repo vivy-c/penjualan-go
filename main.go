@@ -5,9 +5,16 @@ import (
 )
 
 func main() {
-	size := 0  
+	
+	n := 0
+	m := 0
+	fmt.Print("n=")  
+	fmt.Scanln(&n)  
+	fmt.Print("m=")  
+	fmt.Scanln(&m) 
 	fmt.Print("n+m=")  
-	fmt.Scanln(&size)  
+	size := n+m
+	fmt.Println(size)  
 	fmt.Println("isi elemen")  
 	elements := make([]int, size)  
 	for i := 0; i < size; i++ {  
